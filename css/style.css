@@ -2349,3 +2349,1289 @@ button:focus-visible {
     }
 
 }
+
+/* =========================================================
+   23. ACADEMIC CATALOGUE
+   ========================================================= */
+
+.catalogue-controls {
+
+    margin-bottom:
+        35px;
+
+    padding:
+        22px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius-medium);
+
+    background:
+        var(--white);
+
+    box-shadow:
+        var(--shadow-small);
+
+}
+
+
+.catalogue-control-group {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        14px;
+
+}
+
+
+.control-label {
+
+    color:
+        var(--text-light);
+
+    font-size:
+        0.7rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        0.15em;
+
+}
+
+
+.semester-buttons {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        9px;
+
+}
+
+
+.semester-button {
+
+    min-height:
+        44px;
+
+    padding:
+        0.65rem 1rem;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        8px;
+
+    background:
+        var(--off-white);
+
+    color:
+        var(--navy-800);
+
+    font-size:
+        0.8rem;
+
+    font-weight:
+        750;
+
+    cursor:
+        pointer;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+
+}
+
+
+.semester-button:hover {
+
+    transform:
+        translateY(-2px);
+
+    border-color:
+        rgba(
+            201,
+            162,
+            39,
+            0.55
+        );
+
+}
+
+
+.semester-button.active {
+
+    border-color:
+        var(--navy-900);
+
+    background:
+        var(--navy-900);
+
+    color:
+        var(--white);
+
+}
+
+
+/* =========================================================
+   24. PROGRAMME MESSAGE
+   ========================================================= */
+
+.programme-message {
+
+    max-height:
+        0;
+
+    overflow:
+        hidden;
+
+    margin-bottom:
+        0;
+
+    padding:
+        0 18px;
+
+    border-radius:
+        var(--radius-small);
+
+    background:
+        var(--gold-soft);
+
+    color:
+        var(--navy-900);
+
+    font-size:
+        0.86rem;
+
+    font-weight:
+        650;
+
+    opacity:
+        0;
+
+    transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease,
+        margin 0.3s ease;
+
+}
+
+
+.programme-message.visible {
+
+    max-height:
+        120px;
+
+    margin-bottom:
+        25px;
+
+    padding:
+        14px 18px;
+
+    opacity:
+        1;
+
+}
+
+
+/* =========================================================
+   25. ACADEMIC CATALOGUE
+   ========================================================= */
+
+.academic-catalogue {
+
+    min-height:
+        200px;
+
+}
+
+
+.catalogue-heading {
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.catalogue-heading h2 {
+
+    margin:
+        6px 0 10px;
+
+}
+
+
+.catalogue-heading p {
+
+    max-width:
+        650px;
+
+}
+
+
+/* =========================================================
+   26. COURSE GRID
+   ========================================================= */
+
+.course-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap:
+        18px;
+
+}
+
+
+.course-card {
+
+    position:
+        relative;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    min-height:
+        275px;
+
+    padding:
+        25px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius-medium);
+
+    background:
+        var(--white);
+
+    box-shadow:
+        var(--shadow-small);
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+
+}
+
+
+.course-card::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    top:
+        20px;
+
+    bottom:
+        20px;
+
+    width:
+        3px;
+
+    border-radius:
+        3px;
+
+    background:
+        var(--gold-500);
+
+    opacity:
+        0.7;
+
+}
+
+
+.course-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(
+            201,
+            162,
+            39,
+            0.55
+        );
+
+    box-shadow:
+        var(--shadow-medium);
+
+}
+
+
+.course-code {
+
+    display:
+        inline-block;
+
+    margin-bottom:
+        8px;
+
+    color:
+        var(--navy-700);
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        0.06em;
+
+}
+
+
+.course-category {
+
+    display:
+        inline-flex;
+
+    align-self:
+        flex-start;
+
+    margin-bottom:
+        18px;
+
+    padding:
+        4px 8px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        20px;
+
+    color:
+        var(--text-light);
+
+    background:
+        var(--off-white);
+
+    font-size:
+        0.64rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.06em;
+
+}
+
+
+.course-card h3 {
+
+    margin-bottom:
+        18px;
+
+    font-size:
+        1.15rem;
+
+    line-height:
+        1.35;
+
+}
+
+
+.course-information {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    margin-top:
+        auto;
+
+    margin-bottom:
+        18px;
+
+    color:
+        var(--text-light);
+
+    font-size:
+        0.75rem;
+
+    font-weight:
+        700;
+
+}
+
+
+.course-button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        100%;
+
+    min-height:
+        42px;
+
+    padding:
+        0.6rem 0.9rem;
+
+    border:
+        1px solid
+        var(--navy-800);
+
+    border-radius:
+        7px;
+
+    background:
+        transparent;
+
+    color:
+        var(--navy-800);
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition);
+
+}
+
+
+.course-button:hover {
+
+    background:
+        var(--navy-800);
+
+    color:
+        var(--white);
+
+}
+
+
+/* =========================================================
+   27. HND CATALOGUE
+   ========================================================= */
+
+.hnd-catalogue-wrapper {
+
+    margin-top:
+        100px;
+
+    padding-top:
+        80px;
+
+    border-top:
+        1px solid
+        var(--border);
+
+}
+
+
+.specialization-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap:
+        18px;
+
+}
+
+
+.specialization-card {
+
+    position:
+        relative;
+
+    padding:
+        30px;
+
+    min-height:
+        300px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.10
+        );
+
+    border-radius:
+        var(--radius-medium);
+
+    background:
+        var(--navy-900);
+
+    box-shadow:
+        var(--shadow-medium);
+
+    overflow:
+        hidden;
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition);
+
+}
+
+
+.specialization-card::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    right:
+        -55px;
+
+    bottom:
+        -65px;
+
+    width:
+        160px;
+
+    height:
+        160px;
+
+    border:
+        1px solid
+        rgba(
+            201,
+            162,
+            39,
+            0.18
+        );
+
+    border-radius:
+        50%;
+
+}
+
+
+.specialization-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(
+            201,
+            162,
+            39,
+            0.45
+        );
+
+}
+
+
+.specialization-number {
+
+    margin-bottom:
+        35px;
+
+    color:
+        var(--gold-400);
+
+    font-size:
+        2rem;
+
+    font-weight:
+        850;
+
+}
+
+
+.specialization-card h3 {
+
+    margin-bottom:
+        13px;
+
+    color:
+        var(--white);
+
+    font-size:
+        1.25rem;
+
+}
+
+
+.specialization-card p {
+
+    margin-bottom:
+        25px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.58
+        );
+
+    font-size:
+        0.86rem;
+
+}
+
+
+.specialization-card .course-button {
+
+    margin-top:
+        auto;
+
+    border-color:
+        rgba(
+            201,
+            162,
+            39,
+            0.5
+        );
+
+    color:
+        var(--gold-400);
+
+}
+
+
+.specialization-card .course-button:hover {
+
+    background:
+        var(--gold-500);
+
+    border-color:
+        var(--gold-500);
+
+    color:
+        var(--navy-950);
+
+}
+
+
+/* =========================================================
+   28. COURSE PREVIEW MODAL
+   ========================================================= */
+
+.course-modal {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        3000;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        20px;
+
+    background:
+        rgba(
+            3,
+            12,
+            20,
+            0.78
+        );
+
+    backdrop-filter:
+        blur(8px);
+
+    opacity:
+        0;
+
+    visibility:
+        hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+
+}
+
+
+.course-modal.open {
+
+    opacity:
+        1;
+
+    visibility:
+        visible;
+
+}
+
+
+.course-modal-content {
+
+    position:
+        relative;
+
+    width:
+        min(
+            100%,
+            650px
+        );
+
+    max-height:
+        90vh;
+
+    overflow-y:
+        auto;
+
+    padding:
+        40px;
+
+    border:
+        1px solid
+        rgba(
+            201,
+            162,
+            39,
+            0.35
+        );
+
+    border-radius:
+        var(--radius-large);
+
+    background:
+        var(--white);
+
+    box-shadow:
+        var(--shadow-large);
+
+    transform:
+        translateY(20px)
+        scale(0.98);
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.course-modal.open
+.course-modal-content {
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+.modal-close {
+
+    position:
+        absolute;
+
+    top:
+        15px;
+
+    right:
+        15px;
+
+    width:
+        38px;
+
+    height:
+        38px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        50%;
+
+    background:
+        var(--off-white);
+
+    color:
+        var(--navy-900);
+
+    font-size:
+        1.35rem;
+
+    line-height:
+        1;
+
+    cursor:
+        pointer;
+
+    transition:
+        background var(--transition),
+        color var(--transition);
+
+}
+
+
+.modal-close:hover {
+
+    background:
+        var(--navy-900);
+
+    color:
+        var(--white);
+
+}
+
+
+.modal-course-code {
+
+    display:
+        block;
+
+    margin-bottom:
+        8px;
+
+    color:
+        var(--gold-500);
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        0.1em;
+
+}
+
+
+.modal-course-category {
+
+    display:
+        inline-block;
+
+    margin-bottom:
+        18px;
+
+    padding:
+        5px 9px;
+
+    border-radius:
+        20px;
+
+    background:
+        var(--gold-soft);
+
+    color:
+        var(--navy-900);
+
+    font-size:
+        0.65rem;
+
+    font-weight:
+        800;
+
+}
+
+
+.course-modal-content h2 {
+
+    max-width:
+        540px;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.modal-course-details {
+
+    padding:
+        20px;
+
+    margin-bottom:
+        25px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        var(--radius-small);
+
+    background:
+        var(--off-white);
+
+}
+
+
+.modal-course-details span {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+
+    color:
+        var(--text-light);
+
+    font-size:
+        0.65rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        0.1em;
+
+}
+
+
+.modal-course-details strong {
+
+    color:
+        var(--navy-900);
+
+    font-size:
+        0.95rem;
+
+}
+
+
+.modal-course-coming {
+
+    padding:
+        22px;
+
+    margin-bottom:
+        25px;
+
+    border-left:
+        3px solid
+        var(--gold-500);
+
+    background:
+        #fcfaf2;
+
+}
+
+
+.modal-course-coming > span {
+
+    display:
+        block;
+
+    margin-bottom:
+        8px;
+
+    color:
+        var(--navy-900);
+
+    font-size:
+        0.7rem;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        0.1em;
+
+}
+
+
+.modal-course-coming p {
+
+    font-size:
+        0.88rem;
+
+}
+
+
+.modal-primary-button {
+
+    width:
+        100%;
+
+    min-height:
+        46px;
+
+    border:
+        0;
+
+    border-radius:
+        var(--radius-small);
+
+    background:
+        var(--navy-900);
+
+    color:
+        var(--white);
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+    transition:
+        background var(--transition),
+        transform var(--transition);
+
+}
+
+
+.modal-primary-button:hover {
+
+    background:
+        var(--navy-700);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================================================
+   29. ACADEMIC CATALOGUE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .course-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+    }
+
+
+    .specialization-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+    }
+
+
+    .specialization-card:last-child {
+
+        grid-column:
+            1 / -1;
+
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .catalogue-controls {
+
+        padding:
+            18px;
+
+    }
+
+
+    .semester-buttons {
+
+        display:
+            grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .semester-button {
+
+        width:
+            100%;
+
+        min-height:
+            48px;
+
+    }
+
+
+    .course-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .specialization-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .specialization-card:last-child {
+
+        grid-column:
+            auto;
+
+    }
+
+
+    .hnd-catalogue-wrapper {
+
+        margin-top:
+            70px;
+
+        padding-top:
+            60px;
+
+    }
+
+
+    .course-modal-content {
+
+        padding:
+            32px 22px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .semester-buttons {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .course-card {
+
+        min-height:
+            255px;
+
+        padding:
+            22px;
+
+    }
+
+
+    .specialization-card {
+
+        min-height:
+            270px;
+
+        padding:
+            24px;
+
+    }
+
+
+    .course-modal {
+
+        padding:
+            12px;
+
+    }
+
+
+    .course-modal-content {
+
+        max-height:
+            94vh;
+
+        border-radius:
+            16px;
+
+    }
+
+       }
