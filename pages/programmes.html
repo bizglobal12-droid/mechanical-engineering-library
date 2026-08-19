@@ -596,7 +596,253 @@
 
 </section>
 
+<!-- =====================================================
+     LIVE ACADEMIC CATALOGUE
+===================================================== -->
 
+<section
+    id="academic-catalogue"
+    class="content-section"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-kicker">
+                LIVE ACADEMIC CATALOGUE
+            </span>
+
+            <h2>
+                Explore the Engineering Curriculum
+            </h2>
+
+            <p>
+                Select an academic semester to explore
+                the structured Mechanical Engineering
+                courses in the library.
+            </p>
+
+        </div>
+
+
+        <!-- =============================================
+             ND SEMESTER NAVIGATION
+        ============================================== -->
+
+        <div class="catalogue-controls">
+
+            <div class="catalogue-control-group">
+
+                <span class="control-label">
+                    NATIONAL DIPLOMA
+                </span>
+
+
+                <div class="semester-buttons">
+
+                    <button
+                        type="button"
+                        class="semester-button active"
+                        data-semester="nd1-sem1"
+                    >
+                        ND I · Semester I
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="semester-button"
+                        data-semester="nd1-sem2"
+                    >
+                        ND I · Semester II
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="semester-button"
+                        data-semester="nd2-sem1"
+                    >
+                        ND II · Semester I
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="semester-button"
+                        data-semester="nd2-sem2"
+                    >
+                        ND II · Semester II
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =============================================
+             PROGRAMME MESSAGE
+        ============================================== -->
+
+        <div
+            id="programme-message"
+            class="programme-message"
+            role="status"
+            aria-live="polite"
+        ></div>
+
+
+        <!-- =============================================
+             DYNAMIC ND COURSE CATALOGUE
+        ============================================== -->
+
+        <div
+            id="course-catalogue"
+            class="academic-catalogue"
+        >
+
+            <!-- JavaScript inserts courses here -->
+
+        </div>
+
+
+        <!-- =============================================
+             HND SPECIALISATIONS
+        ============================================== -->
+
+        <div class="hnd-catalogue-wrapper">
+
+            <div class="section-heading">
+
+                <span class="section-kicker">
+                    HIGHER NATIONAL DIPLOMA
+                </span>
+
+                <h2>
+                    HND Engineering Specialisations
+                </h2>
+
+                <p>
+                    Higher National Diploma studies will
+                    branch into advanced specialist
+                    engineering pathways.
+                </p>
+
+            </div>
+
+
+            <div
+                id="hnd-catalogue"
+                class="specialization-grid"
+            >
+
+                <!-- JavaScript inserts HND options here -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COURSE PREVIEW MODAL
+===================================================== -->
+
+<div
+    id="course-modal"
+    class="course-modal"
+    aria-hidden="true"
+>
+
+    <div
+        class="course-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-course-title"
+    >
+
+        <button
+            id="close-course-modal"
+            class="modal-close"
+            type="button"
+            aria-label="Close course preview"
+        >
+            ×
+        </button>
+
+
+        <span
+            id="modal-course-code"
+            class="modal-course-code"
+        >
+            MEC 000
+        </span>
+
+
+        <span
+            id="modal-course-category"
+            class="modal-course-category"
+        >
+            Professional
+        </span>
+
+
+        <h2 id="modal-course-title">
+            Course Title
+        </h2>
+
+
+        <div class="modal-course-details">
+
+            <div>
+
+                <span>
+                    CREDIT LOAD
+                </span>
+
+                <strong id="modal-course-units">
+                    0 Credit Units
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-course-coming">
+
+            <span>
+                COURSE LIBRARY
+            </span>
+
+            <p>
+                The complete course library will eventually
+                contain structured modules, engineering
+                explanations, worked calculations, diagrams,
+                practical applications, examples, revision
+                materials and assessments.
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="modal-primary-button"
+            onclick="closeCoursePreview()"
+        >
+            Return to Catalogue
+        </button>
+
+    </div>
+
+</div>
 
 <!-- =====================================================
      PROGRAMME LIBRARY
@@ -822,6 +1068,8 @@
      JAVASCRIPT
      ===================================================== -->
 
+<script src="../data/curriculum.js"></script>
+<script src="../js/programmes.js"></script>
 <script src="../js/main.js"></script>
 
 </body>
