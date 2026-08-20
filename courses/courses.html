@@ -3,6 +3,10 @@
 
 <head>
 
+    <!-- =====================================================
+         BASIC DOCUMENT SETUP
+    ===================================================== -->
+
     <meta charset="UTF-8">
 
     <meta
@@ -12,7 +16,7 @@
 
     <meta
         name="description"
-        content="Mechanical Engineering Academic Library — Course Library."
+        content="Mechanical Engineering Academic Library — structured ND and HND course learning."
     >
 
     <meta
@@ -25,8 +29,9 @@
     </title>
 
 
-
-    <!-- Main site styling -->
+    <!-- =====================================================
+         MAIN WEBSITE STYLES
+    ===================================================== -->
 
     <link
         rel="stylesheet"
@@ -34,7 +39,9 @@
     >
 
 
-    <!-- Course-specific styling -->
+    <!-- =====================================================
+         COURSE-SPECIFIC STYLES
+    ===================================================== -->
 
     <link
         rel="stylesheet"
@@ -54,7 +61,6 @@
 <header class="site-header">
 
     <div class="container nav-container">
-
 
         <a
             href="../index.html"
@@ -139,7 +145,7 @@
 
 
 <!-- =====================================================
-     COURSE LIBRARY HERO
+     COURSE HERO
 ===================================================== -->
 
 <main>
@@ -156,19 +162,52 @@
             </span>
 
 
-            <h1>
-                Learn Engineering
-                <span>Course by Course.</span>
+            <!-- JavaScript fills this -->
+
+            <span
+                id="course-category"
+                class="section-kicker"
+            >
+                PROFESSIONAL
+            </span>
+
+
+            <h1 id="course-title">
+                Thermodynamics I
             </h1>
 
 
-            <p class="hero-description">
-
-                Explore structured Mechanical Engineering
-                courses organized by programme, semester,
-                modules and lessons.
-
+            <p
+                id="course-description"
+                class="hero-description"
+            >
+                Loading course information...
             </p>
+
+
+            <div class="course-meta">
+
+                <span>
+                    <strong>CODE</strong>
+                    <span id="course-code">MEC 122</span>
+                </span>
+
+                <span>
+                    <strong>LEVEL</strong>
+                    <span id="course-level">ND I</span>
+                </span>
+
+                <span>
+                    <strong>SEMESTER</strong>
+                    <span id="course-semester">Semester II</span>
+                </span>
+
+                <span>
+                    <strong>CREDIT UNITS</strong>
+                    <span id="course-units">3</span>
+                </span>
+
+            </div>
 
         </div>
 
@@ -179,49 +218,37 @@
 
 
 <!-- =====================================================
-     COURSE CATALOGUE
+     COURSE OVERVIEW
 ===================================================== -->
 
 <section class="content-section">
 
     <div class="container">
 
-
         <div class="section-heading">
 
             <span class="section-kicker">
-                COURSE CATALOGUE
+                COURSE OVERVIEW
             </span>
 
             <h2>
-                Available Courses
+                Understanding the Course
             </h2>
 
+        </div>
+
+
+        <div
+            id="course-overview-content"
+            class="course-overview"
+        >
+
+            <!-- JavaScript inserts overview -->
+
             <p>
-                Select a course to explore its modules,
-                lessons and engineering learning pathway.
+                Loading course overview...
             </p>
 
-        </div>
-
-
-        <!-- JavaScript will populate this -->
-
-        <div
-            id="course-list"
-            class="course-grid"
-        >
-        </div>
-
-
-        <!-- Empty/error message -->
-
-        <div
-            id="course-message"
-            class="programme-message"
-            role="status"
-            aria-live="polite"
-        >
         </div>
 
     </div>
@@ -231,26 +258,270 @@
 
 
 <!-- =====================================================
-     COURSE DETAIL AREA
+     LEARNING OBJECTIVES
+===================================================== -->
+
+<section class="content-section library-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-kicker">
+                LEARNING OBJECTIVES
+            </span>
+
+            <h2>
+                What You Will Learn
+            </h2>
+
+            <p>
+                By completing this course, students should
+                develop the following knowledge and abilities.
+            </p>
+
+        </div>
+
+
+        <ul
+            id="course-objectives"
+            class="objectives-list"
+        >
+
+            <!-- JavaScript inserts objectives -->
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     COURSE PROGRESS
+===================================================== -->
+
+<section class="content-section">
+
+    <div class="container">
+
+        <div class="course-progress-panel">
+
+            <div class="course-progress-header">
+
+                <div>
+
+                    <span class="section-kicker">
+                        LEARNING PROGRESS
+                    </span>
+
+                    <h3>
+                        Course Completion
+                    </h3>
+
+                </div>
+
+
+                <strong id="course-progress-text">
+                    0% Complete
+                </strong>
+
+            </div>
+
+
+            <div
+                class="course-progress-track"
+                aria-label="Course progress"
+            >
+
+                <div
+                    id="course-progress-bar"
+                    class="course-progress-bar"
+                    style="width: 0%;"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     COURSE MODULES
+===================================================== -->
+
+<section class="content-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-kicker">
+                COURSE STRUCTURE
+            </span>
+
+            <h2>
+                Modules & Lessons
+            </h2>
+
+            <p>
+                Progress through the course systematically,
+                beginning with the fundamentals and advancing
+                toward engineering applications.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             MODULE NAVIGATION
+        ================================================== -->
+
+        <div
+            id="module-navigation"
+            class="module-navigation"
+        >
+
+            <!-- JavaScript inserts module buttons -->
+
+        </div>
+
+
+        <!-- =================================================
+             MODULE LIST
+        ================================================== -->
+
+        <div
+            id="module-list"
+            class="module-list"
+        >
+
+            <!-- JavaScript inserts module cards -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LESSON VIEWER
 ===================================================== -->
 
 <section
-    id="course-detail"
+    id="lesson-viewer"
     class="content-section library-section"
 >
 
     <div class="container">
 
+        <div class="section-heading">
 
-        <div
-            id="course-content"
-            class="course-content"
-        >
+            <span class="section-kicker">
+                LESSON VIEWER
+            </span>
 
-            <!-- JavaScript will insert course content here -->
+            <span
+                id="lesson-module-label"
+                class="lesson-module-label"
+            >
+                SELECT A MODULE
+            </span>
+
+            <h2 id="lesson-title">
+                Select a lesson to begin
+            </h2>
 
         </div>
 
+
+        <div
+            id="lesson-content"
+            class="lesson-content"
+        >
+
+            <div class="lesson-placeholder">
+
+                <div class="library-icon">
+                    ⚙
+                </div>
+
+                <h3>
+                    Your Engineering Lesson Will Appear Here
+                </h3>
+
+                <p>
+                    Select a module above and then choose
+                    a lesson to begin studying.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ACADEMIC LEARNING APPROACH
+===================================================== -->
+
+<section class="content-section">
+
+    <div class="container">
+
+        <div class="resource-panel">
+
+            <div>
+
+                <span class="section-kicker">
+                    ACADEMIC APPROACH
+                </span>
+
+                <h2>
+                    Learn the Theory.
+                    Understand the Calculation.
+                    See the Application.
+                </h2>
+
+                <p>
+                    Every course in this library will
+                    progressively connect engineering theory
+                    with mathematical reasoning, calculations,
+                    physical systems, practical applications
+                    and industrial engineering thinking.
+                </p>
+
+            </div>
+
+
+            <div class="resource-list">
+
+                <a href="../programmes/programmes.html">
+                    Programme Structure
+                </a>
+
+                <a href="../index.html#tools">
+                    Engineering Tools
+                </a>
+
+                <a href="../index.html#resources">
+                    Academic Resources
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -285,6 +556,10 @@
         <div class="footer-meta">
 
             <p>
+                MEC 122 • Thermodynamics I
+            </p>
+
+            <p>
                 © 2026 Mechanical Engineering Academic Library
             </p>
 
@@ -301,17 +576,17 @@
 ===================================================== -->
 
 
-<!-- MEC 122 course data -->
+<!-- MEC 122 COURSE DATA -->
 
 <script src="../data/courses/mec122.js"></script>
 
 
-<!-- Course engine -->
+<!-- UNIVERSAL COURSE ENGINE -->
 
 <script src="../js/courses.js"></script>
 
 
-<!-- Main website JavaScript -->
+<!-- MAIN WEBSITE JAVASCRIPT -->
 
 <script src="../js/main.js"></script>
 
